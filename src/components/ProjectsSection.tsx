@@ -5,6 +5,7 @@ import ProjectCard from "./ProjectCard";
 const ProjectsSection = () => {
   const projects = [
     {
+      id: "1",
       title: "EcoTrack App",
       description: "Una app móvil para rastrear y reducir tu huella de carbono personal. Gamificación, challenges y recompensas por hábitos sostenibles.",
       category: "Medio Ambiente",
@@ -15,6 +16,7 @@ const ProjectsSection = () => {
       featured: true
     },
     {
+      id: "2",
       title: "Plataforma de Educación P2P",
       description: "Conecta estudiantes que quieren aprender con otros que dominan diferentes materias. Intercambio de conocimientos sin intermediarios.",
       category: "EdTech",
@@ -24,6 +26,7 @@ const ProjectsSection = () => {
       daysLeft: 8
     },
     {
+      id: "3",
       title: "Local Business Network",
       description: "Red social hiperlocal para conectar pequeños negocios de barrio con su comunidad. Fomenta el comercio local y las relaciones vecinales.",
       category: "Social Impact",
@@ -33,6 +36,7 @@ const ProjectsSection = () => {
       daysLeft: 20
     },
     {
+      id: "4",
       title: "Mental Health Companion",
       description: "Asistente digital para el bienestar mental con IA. Proporciona recursos, ejercicios de mindfulness y conecta con profesionales.",
       category: "HealthTech",
@@ -42,6 +46,7 @@ const ProjectsSection = () => {
       daysLeft: 15
     },
     {
+      id: "5",
       title: "Crypto Art Collective",
       description: "Galería descentralizada para artistas digitales emergentes. Marketplace de NFTs con enfoque en arte social y colaborativo.",
       category: "Arte Digital",
@@ -51,6 +56,7 @@ const ProjectsSection = () => {
       daysLeft: 25
     },
     {
+      id: "6",
       title: "Smart Campus IoT",
       description: "Sistema IoT para universidades: optimiza consumo energético, gestiona espacios de estudio y mejora la experiencia estudiantil.",
       category: "IoT",

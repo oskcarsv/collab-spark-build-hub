@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Search, Menu, User, Bell } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,27 +11,27 @@ const Navbar = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2">
             <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">C</span>
             </div>
             <span className="text-xl font-bold text-foreground">CollabSpace</span>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="#explorar" className="text-foreground hover:text-primary transition-colors font-medium">
+            <Link to="/#proyectos" className="text-foreground hover:text-primary transition-colors font-medium">
               Explorar
-            </a>
-            <a href="#proyectos" className="text-foreground hover:text-primary transition-colors font-medium">
+            </Link>
+            <Link to="/#proyectos" className="text-foreground hover:text-primary transition-colors font-medium">
               Proyectos
-            </a>
-            <a href="#marketplace" className="text-foreground hover:text-primary transition-colors font-medium">
+            </Link>
+            <Link to="/recursos" className="text-foreground hover:text-primary transition-colors font-medium">
               Recursos
-            </a>
-            <a href="#comunidad" className="text-foreground hover:text-primary transition-colors font-medium">
+            </Link>
+            <Link to="/comunidad" className="text-foreground hover:text-primary transition-colors font-medium">
               Comunidad
-            </a>
+            </Link>
           </div>
 
           {/* Search Bar */}
@@ -78,18 +79,18 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4 border-t border-border pt-4 animate-fade-up">
             <div className="flex flex-col gap-3">
-              <a href="#explorar" className="text-foreground hover:text-primary transition-colors font-medium py-2">
+              <Link to="/#proyectos" className="text-foreground hover:text-primary transition-colors font-medium py-2">
                 Explorar
-              </a>
-              <a href="#proyectos" className="text-foreground hover:text-primary transition-colors font-medium py-2">
+              </Link>
+              <Link to="/#proyectos" className="text-foreground hover:text-primary transition-colors font-medium py-2">
                 Proyectos
-              </a>
-              <a href="#marketplace" className="text-foreground hover:text-primary transition-colors font-medium py-2">
+              </Link>
+              <Link to="/recursos" className="text-foreground hover:text-primary transition-colors font-medium py-2">
                 Recursos
-              </a>
-              <a href="#comunidad" className="text-foreground hover:text-primary transition-colors font-medium py-2">
+              </Link>
+              <Link to="/comunidad" className="text-foreground hover:text-primary transition-colors font-medium py-2">
                 Comunidad
-              </a>
+              </Link>
               <Button variant="accent" className="mt-2 self-start">
                 Crear proyecto
               </Button>

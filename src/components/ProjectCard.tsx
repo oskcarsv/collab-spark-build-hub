@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Heart, Users, Calendar, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface ProjectCardProps {
+  id: string;
   title: string;
   description: string;
   category: string;
@@ -16,6 +18,7 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({
+  id,
   title,
   description,
   category,
@@ -72,9 +75,11 @@ const ProjectCard = ({
         </Badge>
 
         {/* Title & Description */}
-        <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
-          {title}
-        </h3>
+        <Link to={`/proyecto/${id}`}>
+          <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors cursor-pointer">
+            {title}
+          </h3>
+        </Link>
         <p className="text-muted-foreground text-sm leading-relaxed mb-4 line-clamp-2">
           {description}
         </p>
@@ -110,10 +115,12 @@ const ProjectCard = ({
 
         {/* Action buttons */}
         <div className="flex gap-2">
-          <Button className="flex-1 group/btn">
-            Unirse al proyecto
-            <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
-          </Button>
+          <Link to={`/proyecto/${id}`} className="flex-1">
+            <Button className="w-full group/btn">
+              Ver proyecto
+              <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
+            </Button>
+          </Link>
           <Button variant="outline" size="icon">
             <Users className="w-4 h-4" />
           </Button>
