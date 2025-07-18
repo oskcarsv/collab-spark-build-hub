@@ -36,8 +36,8 @@ const Profile = () => {
 
   // Mock data del perfil
   const profile = {
-    name: "Alex Chen",
-    username: "@alexchen",
+    name: "John Doe",
+    username: "@johndoe",
     title: "Creative Technologist & Digital Artist",
     location: "Barcelona, España",
     avatar: "/placeholder.svg",
@@ -62,10 +62,10 @@ const Profile = () => {
     lookingFor: "Proyectos que mezclen arte y tecnología, colaboraciones con artistas digitales, y oportunidades para crear experiencias inmersivas que generen impacto social.",
     availability: "Disponible para proyectos creativos",
     contact: {
-      email: "alex@creativecode.studio",
-      website: "https://alexchen.studio",
-      github: "https://github.com/alexchen",
-      linkedin: "https://linkedin.com/in/alexchen"
+      email: "john@creativecode.studio",
+      website: "https://johndoe.studio",
+      github: "https://github.com/johndoe",
+      linkedin: "https://linkedin.com/in/johndoe"
     },
     achievements: [
       {
