@@ -1,73 +1,77 @@
-# Welcome to your Lovable project
+# CollabSpark - HUB de Colaboración para Jóvenes
 
-## Project info
+## Visión del Proyecto
 
-**URL**: https://lovable.dev/projects/1b589274-165b-407a-a888-b0b27aac89ac
+CollabSpark es un HUB digital diseñado para conectar talento joven con oportunidades de experimentación, crecimiento y colaboración. Nuestra misión es democratizar el acceso a la experiencia real y fomentar un ecosistema creativo y emprendedor más inclusivo.
 
-## How can I edit this code?
+### Los Dos Ejes Principales
 
-There are several ways of editing your application.
+1. **Exploración y Participación en Proyectos**
+   - **Microproyectos**: Para experimentar, practicar y ganar experiencia sin presión
+   - **Proyectos con potencial**: Ideas que pueden escalar a startups con equipos multidisciplinarios
+   - Sin intermediación laboral ni procesos de selección formales
 
-**Use Lovable**
+2. **Marketplace/Red de Recursos para Escalar**
+   - Conecta con incubadoras, aceleradoras y fondos de inversión
+   - Recursos adaptados a tu perfil, etapa y sector
+   - Democratización del acceso a recursos para escalar ideas
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1b589274-165b-407a-a888-b0b27aac89ac) and start prompting.
+### Filosofía
 
-Changes made via Lovable will be committed automatically to this repo.
+Este espacio es todo lo opuesto a una red social formal o de networking corporativo. Priorizamos:
+- **Inspiración** y **accesibilidad**
+- **Colaboración experimental** 
+- **Diseño minimalista** con fondo blanco y acentos azules
+- **Proceso y crecimiento personal** con el mismo peso que los logros visibles
 
-**Use your preferred IDE**
+## Tecnologías Utilizadas
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Frontend**: React + TypeScript + Vite
+- **UI Components**: shadcn/ui
+- **Styling**: Tailwind CSS
+- **Routing**: React Router DOM
+- **State Management**: TanStack Query
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Desarrollo Local
 
-Follow these steps:
+```bash
+# Instalar dependencias
+npm install
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Iniciar servidor de desarrollo
 npm run dev
+
+# Construir para producción
+npm run build
 ```
 
-**Edit a file directly in GitHub**
+## Estructura del Proyecto
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```
+src/
+├── components/          # Componentes reutilizables
+│   ├── ui/             # Componentes de shadcn/ui
+│   ├── Hero.tsx        # Sección principal
+│   ├── Features.tsx    # Características principales
+│   ├── ProjectsSection.tsx # Sección de proyectos
+│   └── Navbar.tsx      # Navegación
+├── pages/              # Páginas de la aplicación
+│   ├── Index.tsx       # Página principal
+│   ├── Projects.tsx    # Lista de proyectos
+│   ├── ProjectDetail.tsx # Detalle de proyectos
+│   ├── Resources.tsx   # Recursos y marketplace
+│   └── ResourceDetail.tsx # Detalle de recursos
+└── assets/             # Imágenes y recursos estáticos
+```
 
-**Use GitHub Codespaces**
+## Impacto Esperado
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Al conectar talento joven con proyectos reales y una red de recursos, CollabSpark busca:
+- Democratizar el acceso a la experiencia
+- Fomentar un ecosistema creativo y emprendedor más inclusivo
+- Crear un espacio donde las ideas puedan nacer, madurar o quedarse como aprendizaje
+- Proporcionar apoyo, colaboración y visibilidad para todas las iniciativas
 
-## What technologies are used for this project?
+---
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/1b589274-165b-407a-a888-b0b27aac89ac) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+**CollabSpark**: Donde las nuevas generaciones practican, se inspiran, crecen y llevan colaborativamente sus ideas lo más lejos posible.

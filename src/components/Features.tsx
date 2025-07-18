@@ -1,32 +1,24 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Users, Rocket, Network } from "lucide-react";
+import { ArrowRight, Rocket, Network } from "lucide-react";
 import projectsIcon from "@/assets/projects-icon.jpg";
 import marketplaceIcon from "@/assets/marketplace-icon.jpg";
 
 const Features = () => {
   const features = [
     {
-      icon: Users,
-      image: null,
-      title: "Perfiles colaborativos",
-      description: "Muestra tus habilidades, proyectos y pasiones. Conecta con personas que comparten tu visión y ganas de crear.",
-      cta: "Crear mi perfil",
-      color: "primary"
-    },
-    {
       icon: Rocket,
       image: projectsIcon,
-      title: "Explora proyectos únicos",
-      description: "Desde apps revolucionarias hasta iniciativas sociales. Encuentra el proyecto perfecto para tus skills y únete a la aventura.",
+      title: "Proyectos para todos",
+      description: "Desde cosas simples para practicar hasta ideas que pueden cambiar el mundo. Encuentra el proyecto perfecto para ti.",
       cta: "Ver proyectos",
       color: "accent"
     },
     {
       icon: Network,
       image: marketplaceIcon,
-      title: "Marketplace de recursos",
-      description: "Accede a incubadoras, mentores, fondos de inversión y herramientas. Todo lo que necesitas para llevar tu proyecto al siguiente nivel.",
-      cta: "Explorar recursos",
+      title: "Recursos y apoyo",
+      description: "Encuentra programas, incubadoras y fondos que te ayuden a hacer crecer tu proyecto. Todo adaptado a tu etapa.",
+      cta: "Ver recursos",
       color: "primary"
     }
   ];
@@ -36,16 +28,16 @@ const Features = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-up">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Tu espacio para 
-            <span className="bg-gradient-primary bg-clip-text text-transparent"> crear en equipo</span>
+            Todo lo que necesitas para 
+            <span className="bg-gradient-primary bg-clip-text text-transparent"> hacer cosas increíbles</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Más que una plataforma, somos una comunidad donde las ideas toman forma 
-            y los sueños se vuelven realidad a través de la colaboración.
+            Encuentra proyectos y accede a recursos. 
+            Todo en un solo lugar, diseñado para jóvenes como tú.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 gap-8 mb-12 max-w-4xl mx-auto">
           {features.map((feature, index) => (
             <div 
               key={feature.title}
@@ -100,17 +92,17 @@ const Features = () => {
         <div className="text-center animate-fade-up" style={{ animationDelay: '400ms' }}>
           <div className="bg-gradient-card backdrop-blur-sm rounded-2xl p-8 border border-border/50 max-w-2xl mx-auto">
             <h3 className="text-2xl font-bold text-foreground mb-4">
-              ¿Listo para empezar tu próximo gran proyecto?
+              ¿Listo para empezar?
             </h3>
             <p className="text-muted-foreground mb-6">
-              Únete a una comunidad de creators, innovadores y emprendedores que están construyendo el futuro.
+              Únete a nuestra comunidad y encuentra tu próximo proyecto o recurso.
             </p>
             <div className="flex gap-4 justify-center flex-wrap">
               <Button variant="hero" size="lg">
-                Crear mi perfil
+                Ver proyectos destacados
               </Button>
               <Button variant="outline" size="lg">
-                Ver proyectos destacados
+                Explorar recursos
               </Button>
             </div>
           </div>

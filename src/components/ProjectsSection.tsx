@@ -77,12 +77,12 @@ const ProjectsSection = () => {
         {/* Header */}
         <div className="text-center mb-12 animate-fade-up">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Proyectos que 
-            <span className="bg-gradient-primary bg-clip-text text-transparent"> están cambiando el mundo</span>
+            Proyectos para 
+            <span className="bg-gradient-primary bg-clip-text text-transparent"> experimentar y aprender</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Desde startups en fase temprana hasta experimentos creativos. 
-            Encuentra tu próxima aventura y conecta con minds como la tuya.
+            Desde microproyectos para practicar hasta ideas con potencial de escalar. 
+            Aquí cada proyecto es una oportunidad de crecimiento, sin importar el resultado final.
           </p>
         </div>
 
@@ -146,10 +146,10 @@ const ProjectsSection = () => {
         <div className="mt-20 text-center animate-fade-up" style={{ animationDelay: '900ms' }}>
           <div className="bg-gradient-to-br from-primary/10 via-accent/5 to-primary/5 rounded-2xl p-8 md:p-12 border border-primary/20">
             <h3 className="text-3xl font-bold text-foreground mb-4">
-              ¿Tienes una idea increíble?
+              ¿Tienes una idea para experimentar?
             </h3>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Compártela con nuestra comunidad y encuentra las personas perfectas para hacerla realidad.
+              Compártela con nuestra comunidad y encuentra colaboradores que quieren aprender y crecer contigo.
             </p>
             <Button variant="hero" size="lg" className="group">
               Crear mi proyecto

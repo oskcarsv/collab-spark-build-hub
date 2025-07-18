@@ -16,40 +16,39 @@ const Hero = () => {
           <div className="space-y-8 animate-fade-up">
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl font-bold text-foreground leading-tight">
-                Conecta, 
-                <span className="bg-gradient-primary bg-clip-text text-transparent"> colabora </span>
-                y crea juntos
+                El lugar donde las ideas 
+                <span className="bg-gradient-primary bg-clip-text text-transparent"> cobran vida</span>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">
-                La plataforma donde jóvenes creativos se encuentran para construir proyectos increíbles, 
-                desde ideas hasta startups que cambian el mundo.
+                Conecta con otros jóvenes, encuentra proyectos para practicar o ideas para escalar. 
+                Aquí todo es posible, desde experimentos simples hasta grandes sueños.
               </p>
             </div>
             
             {/* Stats */}
             <div className="flex gap-8 py-4">
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary">500+</div>
-                <div className="text-sm text-muted-foreground">Proyectos activos</div>
+                <div className="text-2xl font-bold text-primary">200+</div>
+                <div className="text-sm text-muted-foreground">Microproyectos</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary">2k+</div>
-                <div className="text-sm text-muted-foreground">Colaboradores</div>
+                <div className="text-2xl font-bold text-primary">1.5k+</div>
+                <div className="text-sm text-muted-foreground">Jóvenes experimentando</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary">50+</div>
-                <div className="text-sm text-muted-foreground">Startups nacidas</div>
+                <div className="text-2xl font-bold text-primary">25+</div>
+                <div className="text-sm text-muted-foreground">Startups escalando</div>
               </div>
             </div>
 
             {/* CTA Buttons */}
             <div className="flex gap-4 flex-wrap">
               <Button variant="hero" size="lg" className="group">
-                Empezar a colaborar
+                Ver proyectos
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button variant="outline" size="lg">
-                Explorar proyectos
+                Explorar recursos
               </Button>
             </div>
 
@@ -57,15 +56,15 @@ const Hero = () => {
             <div className="grid grid-cols-3 gap-4 pt-8">
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Users className="w-4 h-4 text-primary" />
-                <span>Perfiles colaborativos</span>
+                <span>Experiencia real</span>
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Lightbulb className="w-4 h-4 text-primary" />
-                <span>Proyectos innovadores</span>
+                <span>Experimentación libre</span>
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Target className="w-4 h-4 text-primary" />
-                <span>Recursos + mentores</span>
+                <span>Red de apoyo</span>
               </div>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Search, Menu, User, Bell } from "lucide-react";
+import { Search, Menu, Bell, User } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -15,22 +15,16 @@ const Navbar = () => {
             <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">C</span>
             </div>
-            <span className="text-xl font-bold text-foreground">CollabSpace</span>
+            <span className="text-xl font-bold text-foreground">CollabSpark</span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            <Link to="/#proyectos" className="text-foreground hover:text-primary transition-colors font-medium">
-              Explorar
-            </Link>
-            <Link to="/#proyectos" className="text-foreground hover:text-primary transition-colors font-medium">
+            <Link to="/proyectos" className="text-foreground hover:text-primary transition-colors font-medium">
               Proyectos
             </Link>
             <Link to="/recursos" className="text-foreground hover:text-primary transition-colors font-medium">
               Recursos
-            </Link>
-            <Link to="/comunidad" className="text-foreground hover:text-primary transition-colors font-medium">
-              Comunidad
             </Link>
           </div>
 
@@ -39,7 +33,7 @@ const Navbar = () => {
             <Search className="w-4 h-4 text-muted-foreground" />
             <input 
               type="text" 
-              placeholder="Buscar proyectos, personas, skills..."
+              placeholder="Buscar proyectos, recursos..."
               className="bg-transparent border-none outline-none flex-1 text-sm placeholder:text-muted-foreground"
             />
           </div>
@@ -54,14 +48,12 @@ const Navbar = () => {
               <Bell className="w-4 h-4" />
               <span className="absolute -top-1 -right-1 w-2 h-2 bg-accent rounded-full"></span>
             </Button>
-            
-            <Button variant="ghost" size="icon">
-              <User className="w-4 h-4" />
-            </Button>
-            
-            <Button variant="accent" size="sm" className="hidden sm:flex">
-              Crear proyecto
-            </Button>
+
+            <Link to="/perfil">
+              <Button variant="ghost" size="icon">
+                <User className="w-4 h-4" />
+              </Button>
+            </Link>
 
             {/* Mobile menu button */}
             <Button 
@@ -79,21 +71,15 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4 border-t border-border pt-4 animate-fade-up">
             <div className="flex flex-col gap-3">
-              <Link to="/#proyectos" className="text-foreground hover:text-primary transition-colors font-medium py-2">
-                Explorar
-              </Link>
-              <Link to="/#proyectos" className="text-foreground hover:text-primary transition-colors font-medium py-2">
+              <Link to="/proyectos" className="text-foreground hover:text-primary transition-colors font-medium py-2">
                 Proyectos
               </Link>
               <Link to="/recursos" className="text-foreground hover:text-primary transition-colors font-medium py-2">
                 Recursos
               </Link>
-              <Link to="/comunidad" className="text-foreground hover:text-primary transition-colors font-medium py-2">
-                Comunidad
+              <Link to="/perfil" className="text-foreground hover:text-primary transition-colors font-medium py-2">
+                Mi Perfil
               </Link>
-              <Button variant="accent" className="mt-2 self-start">
-                Crear proyecto
-              </Button>
             </div>
           </div>
         )}
